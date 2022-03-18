@@ -1,4 +1,8 @@
-MODULE FortranFunctions
+! Programmed by Robert Alvarez
+! Last modified: March 18th 2022
+!
+! Compute the SIN(theta), where theta is in radians, using a better approximation derived from Bhaskara's approximation.
+MODULE SINE_COSINE
   PRIVATE
   PUBLIC :: PI, COSINE, SINE
 
@@ -68,4 +72,4 @@ MODULE FortranFunctions
       IF (MOD(num,2.0D0*PI) > -PI) SINB = -SINB
     END IF
   END FUNCTION SINB
-END MODULE FortranFunctions
+END MODULE SINE_COSINE
